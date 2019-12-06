@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define WIDTH 80
 #define HEIGHT 20
@@ -25,10 +26,12 @@ struct Position
 };
 typedef struct Position Position;
 
+
+
 void initSystem();// 初始化系统设定，设置控制台大小 
 void displayMenu();// 显示系统主菜单 
 
-void drawWindow(Position pos, Position size);
+void drawWindow(int x, int y, int width, int height);
 
 int main()
 {
@@ -39,6 +42,10 @@ int main()
 
 void displayMenu()
 {
+	system("CLS");
+	drawWindow(0, 0, WIDTH, HEIGHT);
+	
+	char c = getchar();
 	
 }
 
@@ -49,7 +56,7 @@ void initSystem()
 	system(tmp);
 }
 
-void drawWindow(Position pos, Position size)
+void drawWindow(int x, int y, int width, int height)
 {
-	
+	for (int i = 0; i < )
 }
